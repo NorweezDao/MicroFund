@@ -1,0 +1,372 @@
+<div class="navbar-area" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light" [class.active]="classApplied">
+      <a class="navbar-brand" routerLink="/">
+        <img src="assets/images/black-logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="search-box">
+          <input type="text" class="input-search" placeholder="Search items, Creators">
+          <button type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/" class="nav-link" >
+                  Home Demo - 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/index-2" class="nav-link" >
+                  Home Demo - 2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/index-3" class="nav-link" >
+                  Home Demo - 3
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Explore
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/live-auctions" class="nav-link" >
+                  Live Auctions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-1" class="nav-link" >
+                  Explore Style One
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-2" class="nav-link" >
+                  Explore Style Two
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-3" class="nav-link" >
+                  Explore Style Three
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-4" class="nav-link" >
+                  Explore Style Four
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-5" class="nav-link" >
+                  Explore Style Five
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-6" class="nav-link" >
+                  Explore Style Six
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-7" class="nav-link" >
+                  Explore Style Seven
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/collection" class="nav-link" >
+                  Collection
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/item-details" class="nav-link" >
+                  Item Details
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/activity" class="nav-link">
+              Activity
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/authors" class="nav-link" >
+                  Authors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/author-profile" class="nav-link" >
+                  Author Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/create" class="nav-link" >
+                  Create
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/connect-wallet" class="nav-link" >
+                  Wallet Connect
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/login" class="nav-link" >
+                  Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/register" class="nav-link" >
+                  Register
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/terms-conditions" class="nav-link" >
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/privacy-policy" class="nav-link" >
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/not-found" class="nav-link" >
+                  404 Error Page
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Community
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/blog" class="nav-link" >
+                  Blog Grid
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/blog-details" class="nav-link" >
+                  Blog Details
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/faq" class="nav-link" >
+                  Help Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/about" class="nav-link" >
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contact" class="nav-link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav for-responsive">
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/" class="nav-link" (click)="toggleClass()" >
+                  Home Demo - 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/index-2" class="nav-link" (click)="toggleClass()" >
+                  Home Demo - 2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/index-3" class="nav-link" (click)="toggleClass()" >
+                  Home Demo - 3
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Explore
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/live-auctions" class="nav-link" (click)="toggleClass()" >
+                  Live Auctions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-1" class="nav-link" (click)="toggleClass()" >
+                  Explore Style One
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-2" class="nav-link" (click)="toggleClass()" >
+                  Explore Style Two
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-3" class="nav-link" (click)="toggleClass()" >
+                  Explore Style Three
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-4" class="nav-link" (click)="toggleClass()" >
+                  Explore Style Four
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-5" class="nav-link" (click)="toggleClass()" >
+                  Explore Style Five
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-6" class="nav-link" (click)="toggleClass()" >
+                  Explore Style Six
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/explore-7" class="nav-link" (click)="toggleClass()" >
+                  Explore Style Seven
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/collection" class="nav-link" (click)="toggleClass()" >
+                  Collection
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/item-details" class="nav-link" (click)="toggleClass()" >
+                  Item Details
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/activity" class="nav-link" (click)="toggleClass()" >
+              Activity
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/authors" class="nav-link" (click)="toggleClass()" >
+                  Authors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/author-profile" class="nav-link" (click)="toggleClass()" >
+                  Author Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/create" class="nav-link" (click)="toggleClass()" >
+                  Create
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/connect-wallet" class="nav-link" (click)="toggleClass()" >
+                  Wallet Connect
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/login" class="nav-link" (click)="toggleClass()" >
+                  Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/register" class="nav-link" (click)="toggleClass()" >
+                  Register
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/terms-conditions" class="nav-link" (click)="toggleClass()" >
+                  Terms & Conditions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/privacy-policy" class="nav-link" (click)="toggleClass()" >
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/not-found" class="nav-link" (click)="toggleClass()" >
+                  404 Error Page
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link dropdown-toggle">
+              Community
+            </a>
+            <ul class="dropdown-menu">
+              <li class="nav-item">
+                <a routerLink="/blog" class="nav-link" (click)="toggleClass()" >
+                  Blog Grid
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/blog-details" class="nav-link" (click)="toggleClass()" >
+                  Blog Details
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/faq" class="nav-link" (click)="toggleClass()" >
+                  Help Center
+                </a>
+              </li>
+              <li class="nav-item">
+                <a routerLink="/about" class="nav-link" (click)="toggleClass()" >
+                  About Us
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contact" class="nav-link" (click)="toggleClass()" >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+        <div class="others-option d-flex align-items-center">
+          <div class="option-item">
+            <a routerLink="/create" class="default-btn">Create</a>
+          </div>
+          <div class="option-item">
+            <a routerLink="/connect-wallet" class="default-btn">Connect Wallet</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
