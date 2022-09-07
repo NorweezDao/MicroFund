@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {Web3Service} from "./services/contract/web3.service";
 
 @Component({
   selector: 'app-root',
@@ -11,16 +10,6 @@ export class AppComponent {
   data: string[] | undefined;
 
 
-  constructor(
-    private web3: Web3Service) {
+  constructor() {
   }
-
-
-  Connect() {
-    this.web3.connectAccount().then(response => {
-      console.log(response);
-      this.data = response
-    })
-  }
-
 }
