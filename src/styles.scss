@@ -1315,13 +1315,16 @@ font: {
   weight: 600;
 }
 
-;
+
 margin: {
   left: 5px;
   right: 5px;
 }
 
-;
+  a:hover {
+    color: black !important;
+  }
+
 &
 :hover {
   background-color: var(--pinkColor);

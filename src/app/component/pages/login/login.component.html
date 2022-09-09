@@ -1,6 +1,8 @@
 <div>
-  <button (click)="login()" > Login</button>
-<button (click)="logout()" > Salir</button>
-  <button (click)="wallet()" > Wallet</button>
-
+  <div class="option-item">
+    <a routerLink="/create"  class="default-btn">Create</a>
+  </div>
+  <div class="option-item">
+    <a (click)="login()" class="default-btn">Connect Wallet</a>
+  </div>
 </div>
