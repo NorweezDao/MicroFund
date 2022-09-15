@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { ComposeDBService } from './services/composeDB/compose-db.service';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,9 @@ export class AppComponent {
   data: string[] | undefined;
 
 
-  constructor() {
+  constructor(
+    private composeDBService: ComposeDBService
+  ) {
+    this.composeDBService.test()
   }
 }
