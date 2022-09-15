@@ -9,6 +9,9 @@
   --lightblueColor: #8D99FF;
   --bodyFonts: 'Josefin Sans', sans-serif;
 }
+a:hover {
+  color: black !important;
+}
 
 body {
   margin: 0;
@@ -1321,9 +1324,7 @@ margin: {
   right: 5px;
 }
 
-  a:hover {
-    color: black !important;
-  }
+
 
 &
 :hover {

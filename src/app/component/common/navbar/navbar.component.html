@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-xl navbar-light bg-light" [class.active]="classApplied">
       <a class="navbar-brand" routerLink="/">
-        <img src="assets/images/black-logo.png" alt="logo">
+        <img src="assets/logo.png" alt="logo" style="width: 10rem">
       </a>
       <button class="navbar-toggler" type="button" (click)="toggleClass()">
                 <span class="burger-menu">
@@ -63,14 +63,11 @@
           </li>
  <br>
         </ul>
-        <div class="others-option d-flex align-items-center">
-          <div class="option-item">
-            <a routerLink="/create" class="default-btn">Create</a>
-          </div>
-          <div class="option-item">
-            <a routerLink="/connect-wallet" class="default-btn">Connect Wallet</a>
-          </div>
-          <app-login></app-login>
+        <div class="others-option d-flex align-items-center " style="display: inline-block;
+">
+                 <app-login style="display: inline-grid;  justify-content: center;
+
+"></app-login>
         </div>
       </div>
     </nav>
