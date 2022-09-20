@@ -17,6 +17,7 @@ export class ComposeDBService {
 
   constructor() {
     // this.ceramic = new CeramicClient('https://ceramic-clay.3boxlabs.com');
+    this.ceramic = new CeramicClient('http://localhost:7007');
   }
 
   async test() {
@@ -26,7 +27,7 @@ export class ComposeDBService {
       models: ['kjzl6hvfrbw6ca7nidsnrv78x7r4xt0xki71nvwe4j5a3s9wgou8yu3aj8cz38e'],
     })
 
-    await writeEncodedComposite(composite, 'my-first-composite.json')
+    // await writeEncodedComposite(composite, './my-first-composite.json')
   }
 
   async getDID() {
