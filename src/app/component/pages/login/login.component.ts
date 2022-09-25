@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MagicService} from "../../../services/magic/magic.service";
+import { WalletService } from 'src/app/services/wallet/wallet.service';
+
 
 
 @Component({
@@ -12,27 +14,33 @@ import {MagicService} from "../../../services/magic/magic.service";
 })
 
 export class LoginComponent implements OnInit {
+  public CurrentWallet = this.walletService.getWallet();
 
-
-  constructor(private magic: MagicService) {
+  constructor(private magic: MagicService, private walletService: WalletService) {
   }
 
   ngOnInit(): void {
 
   }
 
+  ngDoCheck() {
+    this.CurrentWallet = this.walletService.getWallet();
+  }
+
   async login() {
+    let that = this;
     this.magic.login().then(response => {
-      console.log(response);
+      that.walletService.setWallet(response[0]);
     })
 
   }
 
-async logout(){
-  this.magic.disconnect().then(response => {
-    console.log(response);
-  })
-}
+  async logout(){
+    let that = this;
+    this.magic.disconnect().then(response => {
+      that.walletService.setWallet('');
+    })
+  }
 
   async wallet(){
     this.magic.showWallet().then(response => {
@@ -40,5 +48,8 @@ async logout(){
     })
   }
 
+  formatWallet(value: String){
+    return value.slice(0, 3) + '...' + value.slice(-4);
+  }
 
 }
