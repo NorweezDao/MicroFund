@@ -4,8 +4,7 @@ import { LandingComponent } from "./component/pages/landing/landing.component";
 import { LoginComponent} from "./component/pages/login/login.component";
 
 const routes: Routes = [
-    { path: '', redirectTo: 'landing', pathMatch: 'full'},
-    { path: 'landing', component: LandingComponent},
+    { path: '', component: LandingComponent},
     { path: 'login', component: LoginComponent},
   //{path: '**', component: NotFoundPageComponent} //
 ];
