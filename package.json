@@ -25,15 +25,26 @@
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
+    "@angular/fire": "^7.4.1",
     "@angular/forms": "^14.2.0",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
-    "@composedb/client": "^0.2.1",
+    "@ceramicnetwork/3id-did-resolver": "^2.1.7",
+    "@ceramicnetwork/http-client": "^2.3.4",
+    "@composedb/client": "^0.2.2",
+    "@glazed/devtools": "^0.2.0",
+    "@glazed/graphql-types": "^0.2.0",
+    "@glazed/types": "^0.2.0",
     "@magic-ext/connect": "^2.0.2",
     "@walletconnect/web3-provider": "^1.7.1",
     "bootstrap": "^5.2.0",
+    "dids": "^3.3.0",
+    "ipfs-core-types": "^0.12.0",
+    "key-did-provider-ed25519": "^2.0.1",
+    "key-did-resolver": "^2.1.1",
     "magic-sdk": "^9.0.0",
+    "nft.storage": "^7.0.0",
     "ng2-sticky-nav": "^10.0.0",
     "ngx-scrolltop": "^4.2.0",
     "remixicon": "^2.5.0",
@@ -69,5 +80,9 @@
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "typescript": "~4.8.2"
+  },
+  "browser": {
+    "zlib": false,
+    "fs": true
   }
 }

@@ -8,6 +8,8 @@ import {NavbarComponent} from "./component/common/navbar/navbar.component";
 import {FooterComponent} from "./component/common/footer/footer.component";
 import {NgxScrollTopModule} from "ngx-scrolltop";
 import {AppRoutingModule} from "./app-routing.module";
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {AppRoutingModule} from "./app-routing.module";
     RouterModule,
     NavbarComponent,
     FooterComponent,
-    NgxScrollTopModule
+    NgxScrollTopModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
