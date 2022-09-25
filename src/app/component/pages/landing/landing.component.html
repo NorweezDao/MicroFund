@@ -33,7 +33,7 @@
         <h2 style="margin-bottom:0px">31</h2>
         <span>days remaining</span>
       </div>
-      <button class="btn btn-primary btn-lg btn-block px-5"
+      <button class="btn btn-primary btn-lg btn-block px-5" data-bs-toggle="modal" data-bs-target="#donationModal"
         style="background-color: #F14D5D; border-color: #F14D5D">Contribute to this project</button>
     </div>
   </div>
@@ -149,21 +149,22 @@
 <br>
 <br>
 
-<div class="modal fade" id="OneHealthModal" tabindex="-1" role="dialog" aria-labelledby="OneHealthModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title" id="exampleModalLabel">Thank you for your donation!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Woohoo, you're reading this text in a modal!</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <p>How much do you want to donate?</p>
+        <div class="input-group mb-3">
+          <span class="input-group-text">DAI</span>
+          <input type="text" class="form-control" aria-label="Amount" [(ngModel)]="donationAmount">
+          <span class="input-group-text">.00</span>
+        </div>
+        <p>{{errorMessage}}</p>
+        <button (click)="donate()" type="button" class="btn btn-primary">Donate</button>
       </div>
     </div>
   </div>
